@@ -10,7 +10,7 @@ public class GestoreGara{
     }
 
     public synchronized void traguardo(Astronave astronave){
-        System.out.println("Gara terminata per " +astronave.giocatore);
+        System.out.println("Traguardo raggiunto da " +astronave.giocatore);
         posizione++;
         classifica.add(posizione+") "+astronave.giocatore +" con astronave " + astronave.nomeAstronave+"\n");
     }
