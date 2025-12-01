@@ -1,3 +1,4 @@
+import java.io.FileWriter;
 import static java.lang.Thread.sleep;
 
 public class Astronave implements Runnable {
