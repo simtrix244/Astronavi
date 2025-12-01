@@ -5,7 +5,7 @@ public class Astronave implements Runnable {
     public int posizione;
     public String nomeAstronave;
     public int giriMassimi;
-    public int giroCorrente = 0;
+    public int giroCorrente = 1;
     public GestoreGara g;
 
     public Astronave(String giocatore, String nomeAstronave, int giri, GestoreGara g) {
