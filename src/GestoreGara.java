@@ -1,4 +1,17 @@
-public class GestoreGara {//decide il percorso che deve fare astronave
+import java.util.ArrayList;
 
+public class GestoreGara{
+    public int contaGiri;
+    public ArrayList<String> classifica = new ArrayList<>();
+    public int posizione = 0;
 
+    public GestoreGara(){
+
+    }
+
+    public synchronized void traguardo(Astronave astronave){
+        System.out.println("Gara terminata per " +astronave.giocatore);
+        posizione++;
+        classifica.add(posizione+") "+astronave.giocatore +" con astronave " + astronave.nomeAstronave+"\n");
+    }
 }
